@@ -1,17 +1,139 @@
+<!DOCTYPE html>
 <html>
 <head>
     <!-- Include normalize.css from CDN to provide some very basic default styling -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" integrity="sha256-K3Njjl2oe0gjRteXwX01fQD5fkk9JFFBdUHy/h38ggY=" crossorigin="anonymous" />
-
-
-
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <title>Visit Boston</title>
+    <meta name = "description" content = "Let us help you plan your next trip to Boston.">
 </head>
+<body>
+    <h1>Visit Boston</h1>
+    <!-- Menu to relative sites
+          home>this page
+          about>mission statement & office location-->
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#contact">About</a></li>
+    </ul>
 
+    <!-- Boston skyline and introduction -->
+    <img src="boston-longer.jpg" alt="Balcony overlooking Boston" id="long">
+    <h2>Boston Welcomes You</h2>
+    <p>Welcome to Boston, Massachusetts, a quintessential blend of colonial
+      history and cutting-edge innovation.  From the charming cobblestones of
+      Beacon Hill and revolutionary landmarks of the Freedom Trail, to the
+      iconic grounds of Harvard University and Fenway Park,
+      Boston is a treasure trove of Americana.
+      Fun if by land and fun if by sea, Boston is an ideal destination for your
+      next vacation and we're here to help! Explore diverse neighborhoods, enjoy
+      an eclectic array of performing arts, shop in chic boutiques and high-end
+      malls, fall into a foodies paradise, find the perfect hotel, and discover
+      the true essence of Boston.</p>
 
+      <!-- form to enlist in our newsletter for related events and things to see in Boston -->
+      <form>
+        <label>Interested in signing up for our newsletter covering events and exclusive travel offers?<br/>
+        <input type="email" name="email" placeholder="loveBoston@email.com">
+        </label>
+        <input type="submit" value="Sign me up!">
+      </form>
 
+    <!-- Events in the near future, organized in a table -->
+    <h2 id="events">Upcoming Events</h2>
+    <table>
+      <tr>
+        <th>Date</th>
+        <th>Event</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>September 26</td>
+        <td>Street Pianos Boston</td>
+        <td>The pianos are making a return engagement. In 2013, more than 500,000 people across the city engaged with Street Pianos Boston
+        sharing music and song in a citywide festival.</td>
+      </tr>
+      <tr>
+        <td>September 27</td>
+        <td>The In-Between, Photographs by Nancy Fulton</td>
+        <td>Nancy Fulton is an artist, photographer, painter, and architect.
+        Her varied background in the arts strongly influences the way she looks
+      through her camera lens.</td>
+      </tr>
+    </table>
 
+    <!-- A few of my favorite sites... I was going to do 10 but it was taking a long time to do 3
+          Each image and description is in its own under the "img" class
+          Each desciption links out to the relevant external site for each attraction
+          The description has some basic styling so it has its own div too so I could style all the descriptions at the same time-->
+<h2>3 Must See Sights</h2>
+<div class="img">
+  <img src="fenway.jpg" alt="Fenway" width="300" height="200">
+  <div class="desc">
+  <h3>Fenway Stadium</h3>
+  <p>Fenway Park has been the Boston Red Sox home field since 1912. Come to a game or
+  take a walking tour of the stadium and bring the whole family!
+  <a target="_blank" href="http://boston.redsox.mlb.com/bos/ballpark/">Learn more</a></p>
 
+  <p>Open 9AM-5PM Sun-Sat <br/>
+    4 Yawkey Way, Boston, MA 02215</p>
+</div>
+</div>
 
+<div class="img">
+  <img src="newbury.jpg" alt="Newbury Street" width="300" height="200">
+  <div class="desc">
+  <h3>Newbury Street</h3>
+  <p>Grab a cup of coffee and take a stroll down Newbury Street, a mile-long strip of unique boutiques,
+    trendy galleries, and high-end salons.
+  <a target="_blank" href="http://www.newbury-st.com/">Learn more</a></p>
+  <p> Hours will vary with each store <br/>
+    Newbury Street, Boston, MA 02215</p>
+</div>
+</div>
 
+<div class="img">
+  <img src="pru.jpg" alt="Prudential Center" width="300" height="200">
+  <div class="desc">
+    <h3>Prudential Center</h3>
+    <p>Go up to the observation deck at the Prudential Center and see the sunset over Boston
+    or get dinner at one of the restaurants on the lower floors.
+    <a target="_blank" href="http://www.prudentialcenter.com/">Learn more</a>
+    </p>
+    <p>Open from 10AM-9PM Mon-Sat &amp; 11AM-6PM Sun<br/>
+    Prudential Tower, 800 Boylston St, Boston, MA 02199</p>
+  </div>
+</div>
 
+<h2>About Us</h2>
+<h3>Our Mission: Help people from all around the world experience the best of Boston.</h3>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94411.58110367508!2d-71.12736852149914!3d42.31347902733431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3652d0d3d311b%3A0x787cbf240162e8a0!2sBoston%2C+MA!5e0!3m2!1sen!2sus!4v1474945459799" width="600" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+<form id = "contact">
+  <fieldset>
+    <legend>Get in Touch</legend>
+  <label>Name:
+  <input type="text" name="name" placeholder="John Doe">
+  </label>
+  <br/>
+  <label>Your Email:
+  <input type="text" name="email" placeholder="email@example.com">
+  </label>
+  <br/>
+  <label>Comments &amp; Questions:
+    <textarea rows="4" cols="50">Your Message
+    </textarea>
+  </label>
+  <input type="submit" value="Submit">
+</fieldset>
+</form>
+
+<p id = "bottom">Greater Boston Visitors &amp; Convention Bureau (GBCVB) |
+Two Copley Place |
+Suite 105 |
+Boston, MA 02116-6501 |
+Phone: 617-536-4100 | Fax: 617-424-7664<br/>
+</p>
+</body>
 </html>

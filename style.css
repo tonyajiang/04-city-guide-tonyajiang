@@ -1,0 +1,111 @@
+body{
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  text-align: center;
+  font-size: 16px;
+}
+h1{
+  font-family: 'Satisfy', cursive;
+  font-size: 80px;
+  text-align: center;
+  color: #1f3d7a;
+}
+h2{
+  font-size: 50px;
+  font-family: 'Satisfy', cursive;
+}
+h3{
+  text-align: center;
+  font-family: font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+p{
+  text-align: left;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+#long{
+  width: 100%;
+}
+div.img {
+    margin: 9px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 32%;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+form{
+  display: block;
+  padding: 20px;
+  font-size: 20px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+#events{
+  text-align: center;
+  margin-left: 30px;
+}
+table{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+input[type=submit]{
+    background-color: #1f3d7a;
+    border: none;
+    color: white;
+	  font-family: "Trebuchet MS", Helvetica, sans-serif;
+    padding: 6px 10px;
+    text-decoration: none;
+    margin: 6px 4px;
+    cursor: pointer;
+	  border-radius: 100px;
+}
+input[type=email]{
+	border-radius: 4px;
+	padding: 6px 10px;
+}
+iframe{
+  display: block;
+  float: left;
+  margin-left: 200px;
+}
+fieldset {
+  text-align: left;
+  border-radius: 6px;
+  width: 28%;
+  margin: auto;
+}
+label{
+  display: block;
+  margin-bottom: 10px;
+}
+#bottom{
+  text-align: center;
+}
