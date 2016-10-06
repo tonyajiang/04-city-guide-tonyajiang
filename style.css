@@ -2,6 +2,7 @@ body{
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   text-align: center;
   font-size: 16px;
+  color: rgb(43, 48, 56);
 }
 h1{
   font-family: 'Satisfy', cursive;
@@ -17,28 +18,43 @@ h3{
   text-align: center;
   font-family: font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-size: 30px;
+  font-weight: lighter;
+  font-style: italic;
 }
 p{
-  text-align: left;
+  text-indent: 50px;
+  text-align: center;
   margin-left: 200px;
   margin-right: 200px;
+  line-height: 35px;
+}
+a{
+  text-decoration: none;
+  color: #3d5daf
+}
+a:hover{
+  color: #b23030;
 }
 /*skyline photo to span the entire web browser width*/
 #long{
   width: 100%;
 }
-/*3 must see sights styling*/
+/*"4 must see sights" styling*/
 
 .desc p{
   text-align: center;
   margin-left: 500px;
   margin-right: 500px;
 }
+
 /*general form styling*/
 form{
   display: block;
   padding: 20px;
   font-size: 20px;
+}
+input:focus{
+  background-color: #dadfe8;
 }
 
 /*menu styling w/ some help from w3c*/
@@ -61,10 +77,16 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
+
 /*events styling*/
 #events{
+  background-color: hsla(30, 90%, 70%, 0.5);
+
+}
+#events h2{
   text-align: center;
   margin-left: 30px;
+  padding-top: 10px;
 }
 table{
   width: 90%;
