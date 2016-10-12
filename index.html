@@ -16,7 +16,7 @@
           Does this count as the list requirement? I hope so-->
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="#contact">About</a></li>
+      <li><a href="#ab">About</a></li>
     </ul>
 
     <!-- Boston skyline and introduction -->
@@ -35,16 +35,16 @@
     </p>
 
       <!-- form to enlist in our newsletter for related events and things to see in Boston -->
-      <form>
-        <label>Sign up for our newsletter to get special offers: <br/>
+      <form id="sub">
+        <label>Sign up for our newsletter to get special offers:<br/>
           <input type="email" name="email" placeholder="loveBoston@email.com">
         </label>
         <input type="submit" value="Sign me up!">
       </form>
-
     <!-- Events in the near future, organized in a table -->
-  <div id="events">
+
     <h2>Upcoming Events</h2>
+    <div id="events">
     <table cellspacing = "10">
       <tr>
         <th>Date</th>
@@ -64,6 +64,13 @@
         Her varied background in the arts strongly influences the way she looks
       through her camera lens.</td>
       </tr>
+      <tr>
+        <td>October 11</td>
+        <td>Design Thinking and Social Impact</td>
+        <td>Interested in learning more about design thinking and its application in the world of social impact?
+          Boston+Acumen invites you to spend an evening with us and special guest Naz Mirzaie (design researcher at essential)
+          to learn how to use the techniques of a designer to define problems, identify key stakeholders, and storyboard possible solutions. </td>
+      </tr>
     </table>
   </div>
 
@@ -72,54 +79,54 @@
           Each desciption links out to the relevant external site for each attraction
           The description has some basic styling so it has its own div too so I could style all the descriptions at the same time-->
 <h2>Must See Sights</h2>
-
+<div class="thing">
   <h3>Fenway Stadium</h3>
-  <img src="fenway.jpg" alt="Fenway" width="300" height="200">
+  <img src="fenway.jpg" alt="Fenway" width="300" height="200" class="sights">
   <div class="desc">
   <p>Fenway Park has been the Boston Red Sox home field since 1912. Come to a game or
-  take a guided tour of the stadium and bring the whole family! Click to
-  <a target="_blank" href="http://boston.redsox.mlb.com/bos/ballpark/">learn more</a></p>
-  <p>Open 9AM-5PM Sun-Sat <br/>
-    4 Yawkey Way, Boston, MA 02215</p>
+  take a guided tour of the stadium and bring the whole family!
+  <a target="_blank" href="http://boston.redsox.mlb.com/bos/ballpark/">Learn more</a></p>
+  <p>Open 9AM-5PM Sun-Sat <br/>4 Yawkey Way, Boston, MA 02215</p>
   </div>
-
+</div>
+<div class="thing">
   <h3>Newbury Street</h3>
-  <img src="newbury.jpg" alt="Newbury Street" width="300" height="200">
+  <img src="newbury.jpg" alt="Newbury Street" width="300" height="200" class="sights">
   <div class="desc">
   <p>Grab a cup of coffee and take a stroll down Newbury Street, a mile-long strip of unique boutiques,
-    trendy galleries, and high-end salons. Click to
-  <a target="_blank" href="http://www.newbury-st.com/">learn more</a></p>
-  <p> Hours will vary with each store <br/>
-    Newbury Street, Boston, MA 02215</p>
+    trendy galleries, and high-end salons.
+  <a target="_blank" href="http://www.newbury-st.com/">Learn more</a></p>
+  <p>Hours will vary with each store<br/>Newbury Street, Boston, MA 02215</p>
   </div>
-
+</div>
+<div class="thing">
   <h3>Prudential Center</h3>
-  <img src="pru.jpg" alt="Prudential Center" width="300" height="200">
+  <img src="pru.jpg" alt="Prudential Center" width="300" height="200" class="sights">
   <div class="desc">
   <p>Go up to the observation deck at the Prudential Center and see the sunset over Boston
-    or get dinner at one of the restaurants on the lower floors. Click to
-  <a target="_blank" href="http://www.prudentialcenter.com/">learn more</a>
+    or get dinner at one of the restaurants on the lower floors.
+  <a target="_blank" href="http://www.prudentialcenter.com/">Learn more</a>
   </p>
-  <p>Open from 10AM-9PM Mon-Sat &amp; 11AM-6PM Sun<br/>
-    Prudential Tower, 800 Boylston St, Boston, MA 02199</p>
+  <p>Open from 10AM-9PM Mon-Sat &amp; 11AM-6PM Sun<br/>Prudential Tower, 800 Boylston St, Boston, MA 02199</p>
   </div>
-
+</div>
+<div class="thing">
   <h3>Faneuil Hall</h3>
-  <img src="hall.jpg" alt="Faneuil Hall" width="300" height="200">
+  <img src="hall.jpg" alt="Faneuil Hall" width="300" height="200" class="sights">
   <div class="desc">
   <p>Faneuil Hall was established in 1742 and is one of the many sites along the Freedom Trail. It offers a wide variety of
-    shops, food stands, and street entertainment. Click to
-  <a target="_blank" href="http://www.faneuilhallmarketplace.com/">learn more</a></p>
+    shops, food stands, and street entertainment.
+  <a target="_blank" href="http://www.faneuilhallmarketplace.com/">Learn more</a></p>
 
-  <p>Open 9AM-5PM Sun-Sat <br/>
-    1 Faneuil Hall Sq, Quincy Market, Boston, MA 02109</p>
+  <p>Open 9AM-5PM Sun-Sat <br/>1 Faneuil Hall Sq, Quincy Market, Boston, MA 02109</p>
   </div>
+</div>
 <!-- About section w/ mission statement and contact form -->
+<div id="ab">
 <h2>About Us</h2>
 <h3>Our Mission: Help people from all around the world experience the best of Boston.</h3>
-
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94411.58110367508!2d-71.12736852149914!3d42.31347902733431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3652d0d3d311b%3A0x787cbf240162e8a0!2sBoston%2C+MA!5e0!3m2!1sen!2sus!4v1474945459799" width="600" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-<form id = "contact">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94411.58110367508!2d-71.12736852149914!3d42.31347902733431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3652d0d3d311b%3A0x787cbf240162e8a0!2sBoston%2C+MA!5e0!3m2!1sen!2sus!4v1474945459799" width="800" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+<form>
   <fieldset>
     <legend>Get in Touch</legend>
   <label>Name:
@@ -137,6 +144,7 @@
   <input type="submit" value="Submit">
 </fieldset>
 </form>
+</div>
 
 <p id = "bottom">Greater Boston Visitors &amp; Convention Bureau (GBCVB) |
 Two Copley Place |

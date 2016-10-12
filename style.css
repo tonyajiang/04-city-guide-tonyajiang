@@ -22,13 +22,16 @@ h3{
   font-style: italic;
 }
 p{
-  text-indent: 50px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  margin-left: 200px;
-  margin-right: 200px;
   line-height: 35px;
+  width: 80em;
+  padding: 10px;
 }
+
 a{
+  display: block;
   text-decoration: none;
   color: #3d5daf
 }
@@ -39,12 +42,22 @@ a:hover{
 #long{
   width: 100%;
 }
-/*"4 must see sights" styling*/
 
+/*"4 must see sights" styling*/
+.sights{
+  padding: 5px;
+  border: 5px dotted #b23030;
+}
 .desc p{
   text-align: center;
-  margin-left: 500px;
-  margin-right: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+}
+.thing{
+  display: inline-block;
+  box-shadow: 5px 10px 10px 5px #888888;
+  margin: 20px;
 }
 
 /*general form styling*/
@@ -53,8 +66,10 @@ form{
   padding: 20px;
   font-size: 20px;
 }
-input:focus{
+input[type=text]:focus{
   background-color: #dadfe8;
+  padding: 10px;
+  width: 600px;
 }
 
 /*menu styling w/ some help from w3c*/
@@ -81,7 +96,11 @@ li a {
 /*events styling*/
 #events{
   background-color: hsla(30, 90%, 70%, 0.5);
-
+  width: 80%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: scroll;
 }
 #events h2{
   text-align: center;
@@ -89,15 +108,31 @@ li a {
   padding-top: 10px;
 }
 table{
-  width: 90%;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   text-align: left;
+  padding: 50px;
 }
-
 /*button and form styling*/
+#ab{
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+}
 input[type=submit]{
     background-color: #1f3d7a;
+    border: none;
+    color: white;
+	  font-family: "Trebuchet MS", Helvetica, sans-serif;
+    padding: 6px 10px;
+    text-decoration: none;
+    margin: 6px 4px;
+    cursor: pointer;
+	  border-radius: 100px;
+}
+input[type=submit]:hover{
+    background-color: #b23030;
     border: none;
     color: white;
 	  font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -110,17 +145,24 @@ input[type=submit]{
 input[type=email]{
 	border-radius: 4px;
 	padding: 6px 10px;
+  margin: 10px;
 }
-iframe{
-  display: block;
-  float: left;
-  margin-left: 200px;
+input[type=email]:focus{
+  background-color: #dadfe8;
+  padding: 10px;
+  width: 600px;
+}
+input[type=text]{
+	border-radius: 4px;
+	padding: 6px 10px;
+  margin: 10px;
 }
 fieldset {
   text-align: left;
   border-radius: 6px;
-  width: 28%;
-  margin: auto;
+  width: 800px;
+  height: 370px;
+  display: inline-block;
 }
 label{
   display: block;
