@@ -14,7 +14,7 @@
           home>this page
           about>mission statement & contact form
           Does this count as the list requirement? I hope so-->
-    <ul>
+    <ul id="menu">
       <li><a href="index.html">Home</a></li>
       <li><a href="#ab">About</a></li>
     </ul>
@@ -28,10 +28,18 @@
       iconic grounds of Harvard University and Fenway Park,
       Boston is a treasure trove of Americana.
       Fun if by land and fun if by sea, Boston is an ideal destination for your
-      next vacation and we're here to help! Explore diverse neighborhoods, enjoy
-      an eclectic array of performing arts, shop in chic boutiques and high-end
-      malls, fall into a foodies paradise, find the perfect hotel, and discover
-      the true essence of Boston.
+      next vacation and we're here to help!
+    <div id="todo">
+      <ul>
+        <li>Explore diverse neighborhoods</li>
+        <li>Enjoy an eclectic array of performing arts</li>
+        <li>Shop in chic boutiques and high-end malls</li>
+        <li>Fall into a foodies paradise</li>
+        <li>Find the perfect hotel</li>
+        <li>Discover the true essence of Boston</li>
+      </ul>
+    </div>
+
     </p>
 
       <!-- form to enlist in our newsletter for related events and things to see in Boston -->
@@ -134,12 +142,11 @@
   </label>
   <br/>
   <label>Your Email:
-  <input type="text" name="email" placeholder="email@example.com">
+  <input type="email" name="email" placeholder="email@example.com">
   </label>
   <br/>
   <label>Comments &amp; Questions:
-    <textarea rows="4" cols="50">Your Message
-    </textarea>
+    <textarea placeholder="Your message here" rows="4" cols="50" ></textarea>
   </label>
   <input type="submit" value="Submit">
 </fieldset>
