@@ -16,7 +16,7 @@ h2{
 }
 h3{
   text-align: center;
-  font-family: font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-size: 30px;
   font-weight: lighter;
   font-style: italic;
@@ -38,9 +38,21 @@ a{
 a:hover{
   color: #b23030;
 }
+
+#header{
+  position: fixed;
+  text-align: right;
+  width: 100%;
+  background-color: White;
+}
+
+.top{
+  width: 100%;
+}
 /*skyline photo to span the entire web browser width*/
 #long{
   width: 100%;
+  margin-top: 200px;
 }
 
 /*"4 must see sights" styling*/
@@ -52,13 +64,17 @@ a:hover{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  width: 700px;
+  width: 90%;
 }
 .thing{
   display: inline-block;
   box-shadow: 5px 10px 10px 5px #888888;
   margin: 20px;
+  float:left;
+  width: 22%;
+  margin-bottom: 100px;
 }
+
 
 /*general form styling*/
 form{
@@ -77,7 +93,8 @@ form{
 }
 
 #menu li {
-    float: left;
+    float: right;
+    list-style-type: none;
 }
 
 li a {
@@ -91,7 +108,6 @@ li a {
 ul{
   list-style-type: circle;
   list-style-position: inside;
-  text-align: left;
 }
 
 li{
@@ -156,7 +172,7 @@ th {
 #ab{
   margin-left: auto;
   margin-right: auto;
-  float: none;
+  clear: left;
 }
 
 input[type=submit]{
